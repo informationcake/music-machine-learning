@@ -3,7 +3,7 @@ Using python to extract features from audio waveforms, and then running machine 
 
 You will need to install the wonderful python library called Librosa, which deals with the handling of audio files. You'll also need the Python library called bokeh, used to create the interactive html plots. All other depenencies should be standard for regular python users.
 
-load_songs.py loads in audio and perform feature extraction, saving the results to disk. The inpuyt is a single folder, usually named after the artist, containing only music files (mp3,wav,wma,mp4,etc...).
+load_songs.py loads in audio and performs feature extraction, saving the results to disk. The inpuyt is a single folder, usually named after the artist, containing only music files (mp3,wav,wma,mp4,etc...).
 
 plot_cluster_bokey.py will create the interactive plot shown here, have a play!
 
