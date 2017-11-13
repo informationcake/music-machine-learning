@@ -6,11 +6,14 @@ You will need to install the wonderful python library called Librosa, which deal
 load_songs.py loads in audio and perform feature extraction, saving the results to disk.
 
 plot_cluster_bokey.py will create the interactive plot shown here, have a play!
+
 https://informationcake.github.io/music-machine-learning/
 
 learn_songs.py will take the _data.pkl files output from load_songs.py, and perform some machine learning and data visualisation techniques. I have yet to upload this part to this repo, watch this space.
 
 I will add more info as I develop this. I'm quite a bit further ahead in this project than this github repo suggests, as I'm only uploading code once I'm sure it will be useful for others. You can get a better feel for this project on my webpage where I show some results and what will be coming on this repo.
+
+You can read in a bit more depth about what is happening here:
 
 https://sites.google.com/view/informationcake/music/machine-learning
 
