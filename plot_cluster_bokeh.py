@@ -66,6 +66,7 @@ for artist in all_data:
 
 p.legend.location='bottom_right' #I want to put this outside the plot eventually but is quite a bit more involved, for now just find a space inside...
 p.legend.click_policy = "hide" #note that unfortunately this does not hide the hovertool glyphs - I think bokeh are working on a fix...
+p.x_range = Range1d(-100, 7000)
 save(p)
 
 
