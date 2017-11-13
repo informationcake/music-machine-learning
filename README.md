@@ -5,7 +5,7 @@ You will need to install the wonderful python library called Librosa, which deal
 
 load_songs.py loads in audio and performs feature extraction, saving the results to disk. The input is a single folder, usually named after the artist, containing only music files (mp3,wav,wma,mp4,etc...). e.g. python load_songs.py my_favourite_artist
 
-plot_cluster_bokey.py will create the interactive plot shown here, have a play!
+plot_cluster_bokeh.py will create the interactive plot shown here, have a play!
 
 https://informationcake.github.io/music-machine-learning/
 
