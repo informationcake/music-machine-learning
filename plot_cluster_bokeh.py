@@ -30,7 +30,7 @@ from bokeh.palettes import Category20_20 as palette
 colors = itertools.cycle(palette)
 output_file("plot_cluster.html", title="Song clustering")
 TOOLS="crosshair,pan,wheel_zoom,box_zoom,reset"
-p = figure(title="Song Clustering", tools=[TOOLS],plot_width=1100,plot_height=700)
+p = figure(title="Song Clustering", tools=[TOOLS],plot_width=1200,plot_height=700)
 
 #As i did feature extraction on each artist seperately, loop through them. Create lists of song names and features
 for artist in all_data:
