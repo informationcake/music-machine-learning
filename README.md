@@ -19,5 +19,5 @@ https://sites.google.com/view/informationcake/music/machine-learning
 
 Thank you for your interest, and if you have ideas, do let me know!
 
-Cheers
+Cheers,
 Alex
