@@ -9,6 +9,8 @@ plot_cluster_bokeh.py will create the interactive plot shown here, have a play!
 
 https://informationcake.github.io/music-machine-learning/
 
+plot_similarity.py will create a plot of the similarity matrix, averaging over all an artists songs.
+
 learn_songs.py will take the _data.pkl files output from load_songs.py, and perform some machine learning and data visualisation techniques. I have yet to upload this part to this repo, watch this space.
 
 I will add more info as I develop this. I'm quite a bit further ahead in this project than this github repo suggests, as I'm only uploading code once I'm sure it will be useful for others. You can get a better feel for this project on my webpage where I show some results and what will be coming on this repo.
