@@ -1,5 +1,6 @@
 
-<!DOCTYPE html>
+Play with the controls on the right to pan/zoom :)
+
 <html lang="en">
     <head>
         <meta charset="utf-8">
