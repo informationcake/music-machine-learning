@@ -1,5 +1,6 @@
 
-<!DOCTYPE html>
+Song clustering (t-SNE) for many artists.
+
 <html lang="en">
     <head>
         <meta charset="utf-8">
