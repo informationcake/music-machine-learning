@@ -7,12 +7,14 @@ load_songs.py loads in audio and performs feature extraction, saving the results
 
 plot_cluster_bokeh.py will create the interactive plot shown here using SVD, have a play!
 
-https://informationcake.github.io/music-machine-learning/
+t-SNE plots:
+[All Artist](plots/plot_cluster_ManyArtists.md)
+[The Flashbulb](plots/FlashbulbPlot_TSNE.md)
+[Avril Lavigne](plots/AvrilLavigne_TSNE_run1.md)
+[Avril Lavigne](plots/AvrilLavigne_TSNE_run2.md)
 
-This one shows non-linear clustering with t-SNE:
-
-https://informationcake.github.io/music-machine-learning/plot_cluster_ManyArtists
-
+SVD plots:
+[All Artists](plots/SVD_artists_plot.md)
 
 plot_similarity.py will create a plot of the similarity matrix, averaging over all an artists songs.
 
