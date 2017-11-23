@@ -8,9 +8,9 @@ load_songs.py loads in audio and performs feature extraction, saving the results
 plot_cluster_bokeh.py will create the interactive plot shown here using SVD, have a play!
 
 t-SNE plots:
-[All Artist](plots/plot_cluster_ManyArtists.md)
-[The Flashbulb](plots/FlashbulbPlot_TSNE.md)
-[Avril Lavigne](plots/AvrilLavigne_TSNE_run1.md)
+[All Artist](plots/plot_cluster_ManyArtists.md),
+[The Flashbulb](plots/FlashbulbPlot_TSNE.md),
+[Avril Lavigne](plots/AvrilLavigne_TSNE_run1.md),
 [Avril Lavigne](plots/AvrilLavigne_TSNE_run2.md)
 
 SVD plots:
