@@ -7,6 +7,7 @@ from collections import OrderedDict
 from bokeh.plotting import *
 from bokeh.models import *
 from bokeh.io import *
+from sklearn.manifold import TSNE
 
 #This python script will take pre-made python dictionaries with feature information about an artists songs, and do some clustering and data visualisation, using bokeh to create html code for interactive plots.
 
@@ -23,14 +24,13 @@ all_data=glob.glob(path+'/*.pkl')
 all_features=[]
 all_artists=[]
 all_songnames=[]
-
 #Initiate figure and pick some colours
 from bokeh.palettes import Category20_20 as palette
 
 colors = itertools.cycle(palette)
 output_file("plot_cluster.html", title="Song clustering")
 TOOLS="crosshair,pan,wheel_zoom,box_zoom,reset"
-p = figure(title="Song Clustering", tools=[TOOLS],plot_width=1200,plot_height=700)
+p = figure(title="Song Clustering", tools=[TOOLS],plot_width=1300,plot_height=700)
 
 #As i did feature extraction on each artist seperately, loop through them. Create lists of song names and features
 for artist in all_data:
@@ -56,17 +56,48 @@ for artist in all_data:
     all_features+=features
     all_artists+=artists
     all_songnames+=songname
-    # Here we do singular vector decomposition. Basically we have 29 dimensions in our data set (29 features), and to visualise it we would rather have 2 dimensions. SVDs combine higher dimensions down to how ever many you choose based on which ones it finds best distinguish the data.
+    # Here we do singular vector decomposition (SVD) or t distributed stocastic neighbor embedding (t-SNE). Basically we have 29 dimensions in our data set (29 features), and to visualise it we would rather have 2 dimensions. SVDs linearly combine higher dimensions down to how ever many you choose based on which ones it finds best distinguish the data.
+    '''
+    #if we want each artist plotted separately, do it here:
     svd = TruncatedSVD(n_components=2, n_iter=7, random_state=42) #initiate SVD
     reduced_data = svd.fit_transform(features) #Reduce data to 2 dimensions.
+    reduced_data = TSNE(n_components=2, learning_rate=int(sys.argv[2])).fit_transform(features)
     plot_data=OrderedDict(x=reduced_data[:,0],y=reduced_data[:,1],label=songname[:],name=artists[:]) #get data and put it in a structure that bokeh can take
     source = ColumnDataSource(data=plot_data) #data
     p.circle('x', 'y', size=10, color=next(colors), source=source,legend='{}'.format(artist_trimmed))
     p.add_tools(HoverTool(tooltips=("@name: "+" @label"))) #add hover labels for each artist as we loop through, which handily makes each artists labels toggleable in the interactive plot!
+    '''
 
-p.legend.location='bottom_right' #I want to put this outside the plot eventually but is quite a bit more involved, for now just find a space inside...
-p.legend.click_policy = "hide" #note that unfortunately this does not hide the hovertool glyphs - I think bokeh are working on a fix...
-p.x_range = Range1d(-100, 7000)
+#if we want each artist clustered together, do it here:
+svd = TruncatedSVD(n_components=2, n_iter=7, random_state=42) #initiate SVD
+#reduced_data = svd.fit_transform(all_features) #Reduce data to 2 dimensions.
+reduced_data = TSNE(n_components=2, n_iter=int(sys.argv[3]), learning_rate=int(sys.argv[2])).fit_transform(all_features)
+
+
+#to colour code the artists we keep track of the index with start/stop
+start=0
+for artist in all_data:
+    data=load_obj(artist.replace('.pkl',''))
+    artist_trimmed=artist.replace('_data.pkl','').replace('all_','').replace(path,'')
+    stop=len(data)+start
+    plot_data=OrderedDict(x=reduced_data[start:stop,0],y=reduced_data[start:stop,1],label=all_songnames[start:stop],name=all_artists[start:stop]) #get data and put it in a structure that bokeh can take
+    source = ColumnDataSource(data=plot_data) #data
+    p.circle('x', 'y', size=10, color=next(colors), source=source,legend='{}'.format(artist_trimmed))
+    p.add_tools(HoverTool(tooltips=("@name: "+" @label"))) #add hover labels for each artist as we loop through, which handily makes each artists labels toggleable in the interactive plot!
+    start=stop
+    print(start)
+
+'''
+p.x_range = Range1d(-100, 9000)
+'''
+p.legend.label_text_font_size = '8pt'
+
+p.legend.glyph_height = 6
+p.legend.glyph_width = 6
+p.legend.label_height= 2
+p.legend.spacing = 0
+p.legend.click_policy = "hide"
+
 save(p)
 
 
