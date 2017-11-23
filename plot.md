@@ -1,5 +1,7 @@
+---
+title: Artist SVD scatter plot
+---
 
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
