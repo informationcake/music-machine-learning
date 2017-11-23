@@ -10,8 +10,8 @@ plot_cluster_bokeh.py will create the interactive plot shown here using SVD, hav
 t-SNE plots:
 [All Artist](plots/plot_cluster_ManyArtists.md),
 [The Flashbulb](plots/FlashbulbPlot_TSNE.md),
-[Avril Lavigne](plots/AvrilLavigne_TSNE_run1.md),
-[Avril Lavigne](plots/AvrilLavigne_TSNE_run2.md)
+[Avril Lavigne 1](plots/AvrilLavigne_TSNE_run1.md),
+[Avril Lavigne 2](plots/AvrilLavigne_TSNE_run2.md)
 
 SVD plots:
 [All Artists](plots/SVD_artists_plot.md)
