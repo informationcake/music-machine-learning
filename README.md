@@ -1,4 +1,6 @@
 # music-machine-learning
+[![DOI](https://zenodo.org/badge/110278467.svg)](https://zenodo.org/badge/latestdoi/110278467)
+
 This website: https://informationcake.github.io/music-machine-learning/
 
 This project is all about using python to extract features from audio waveforms, and then running machine learning algorithms to cluster and quantify music.
