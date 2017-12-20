@@ -28,9 +28,7 @@ learn_songs.py will take the _data.pkl files output from load_songs.py, and perf
 
 I will add more info as I develop this. I'm quite a bit further ahead in this project than this github repo suggests, as I'm only uploading code once I'm sure it will be useful for others. You can get a better feel for this project on my webpage where I show some results and what will be coming on this repo.
 
-You can read in a bit more depth about what is happening here:
-
-https://sites.google.com/view/informationcake/music/machine-learning
+You can read in a bit more depth about what is happening on my Google site [informationcake.com](https://sites.google.com/view/informationcake/music/machine-learning)
 
 Thank you for your interest, and if you have ideas, do let me know!
 
