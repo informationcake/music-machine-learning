@@ -14,12 +14,12 @@ Song clustering (t-SNE) for many artists.
 </script>
         <style>
           html {
-            width: 100%;
-            height: 100%;
+            width: 90%;
+            height: 90%;
           }
           body {
             width: 90%;
-            height: 100%;
+            height: 90%;
             margin: auto;
           }
         </style>
