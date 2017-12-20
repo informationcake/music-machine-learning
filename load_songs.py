@@ -211,9 +211,10 @@ if __name__ == "__main__":
         song_name=[] #text
         song_data=[] #list of numbers
         song_sr=[] #sample rate
-        for song1 in songdb: song_name.append(song1[0])
-        for song1 in songdb: song_data.append(song1[1])
-        for song1 in songdb: song_sr.append(song1[2])
+        for song1 in songdb: 
+            song_name.append(song1[0])
+            song_data.append(song1[1])
+            song_sr.append(song1[2])
 
         start_feat = time.time() #note the time
         print("Data is all ready, now extracting features from the songs...")
