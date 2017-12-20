@@ -24,11 +24,15 @@ SVD plots:
 
 plot_similarity.py will create a plot of the similarity matrix, averaging over all an artists songs.
 
-learn_songs.py will take the _data.pkl files output from load_songs.py, and perform some machine learning and data visualisation techniques. I have yet to upload this part to this repo, watch this space.
+learn_songs.py will take the _data.pkl files output from load_songs.py, and perform some machine learning and data visualisation techniques. 
 
-I will add more info as I develop this. I'm quite a bit further ahead in this project than this github repo suggests, as I'm only uploading code once I'm sure it will be useful for others. You can get a better feel for this project on my webpage where I show some results and what will be coming on this repo.
+learn_songs_v0.py is a blank version you can start from scratch yourself (if you know how to implement machine learning). 
 
-You can read in a bit more depth about what is happening on my Google site [informationcake.com](https://sites.google.com/view/informationcake/music/machine-learning)
+learn_songs_v1.py is a version which has some machine learning code added in already. You can run it and see what happens, tweak it, exploring parts I've commented out. Hopefully it will be useful for anyone wanting to explore how to understand implementing machine learning.
+
+I will add more info as I develop this. I'm quite a bit further ahead in this project than this github repo suggests, as I'm only uploading code once I'm sure it will be useful for others. 
+
+You can read in a bit more depth about what is happening on my Google site [informationcake.com] where I show some results and plots (https://sites.google.com/view/informationcake/music/machine-learning)
 
 Thank you for your interest, and if you have ideas, do let me know!
 
