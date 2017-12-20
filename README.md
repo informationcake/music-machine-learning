@@ -9,11 +9,13 @@ You will need to install the wonderful python library called Librosa, which deal
 
 load_songs.py loads in audio and performs feature extraction, saving the results to disk. The input is a single folder, usually named after the artist, containing only music files (mp3,wav,wma,mp4,etc...). e.g. python load_songs.py my_favourite_artist
 
-plot_cluster_bokeh.py will create the interactive plot shown here using SVD, have a play!
+plot_cluster_bokeh.py will create the interactive plot shown here using t-SNE or SVD, have a play!
 
 t-SNE plots:
-[All Artist](plots/plot_cluster_ManyArtists.md),
-[The Flashbulb](plots/FlashbulbPlot_TSNE.md),
+[All Artist Set1](plots/plot_cluster_ManyArtists.md),
+[All Artist Set2](plots/plot_cluster_ManyArtists2.md),
+[The Flashbulb1](plots/FlashbulbPlot_TSNE.md),
+[The Flashbulb2](plots/FlashbulbPlot_TSNE2.md),
 [Avril Lavigne 1](plots/AvrilLavigne_TSNE_run1.md),
 [Avril Lavigne 2](plots/AvrilLavigne_TSNE_run2.md)
 
