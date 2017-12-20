@@ -32,7 +32,7 @@ learn_songs_v1.py is a version which has some machine learning code added in alr
 
 I will add more info as I develop this. I'm quite a bit further ahead in this project than this github repo suggests, as I'm only uploading code once I'm sure it will be useful for others. 
 
-You can read in a bit more depth about what is happening on my Google site [informationcake.com] where I show some results and plots (https://sites.google.com/view/informationcake/music/machine-learning)
+You can read in a bit more depth about what is happening on my Google site [informationcake.com](https://sites.google.com/view/informationcake/music/machine-learning) where I show some results and plots.
 
 Thank you for your interest, and if you have ideas, do let me know!
 
