@@ -24,9 +24,7 @@ SVD plots:
 
 plot_similarity.py will create a plot of the similarity matrix, averaging over all an artists songs.
 
-learn_songs.py will take the _data.pkl files output from load_songs.py, and perform some machine learning and data visualisation techniques. 
-
-learn_songs_v0.py is a blank version you can start from scratch yourself (if you know how to implement machine learning). 
+learn_songs_v0.py will take the _data.pkl files output from load_songs.py, and perform some machine learning and data visualisation techniques. v0 is a blank version you can start from scratch yourself (if you know how to implement machine learning). 
 
 learn_songs_v1.py is a version which has some machine learning code added in already. You can run it and see what happens, tweak it, exploring parts I've commented out. Hopefully it will be useful for anyone wanting to explore how to understand implementing machine learning.
 
