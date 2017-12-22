@@ -14,12 +14,12 @@ Play with the controls on the right to pan/zoom :)
 </script>
         <style>
           html {
-            width: 50%;
-            height: 50%;
+            width: 100%;
+            height: 100%;
           }
           body {
-            width: 50%;
-            height: 50%;
+            width: 100%;
+            height: 100%;
             margin: auto;
           }
         </style>
