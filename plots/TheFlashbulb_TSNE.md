@@ -20,7 +20,7 @@ Play with the controls on the right to pan/zoom :)
           body {
             width: 90%;
             height: 100%;
-            margin: auto;
+            margin-left: 0px;
           }
         </style>
     </head>
